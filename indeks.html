@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Conventer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/currency.css">
+    <script defer src="js/currency.js"></script>
+</head>
+
+<body>
+    <div class="container__header">
+        TWÓJ 💲💲💲 KANTOR</div> 
+    
+    <div class="container">
+        <form class="form js-form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Kalkulator walutowy</legend>
+                <p>
+                    <label>
+                        <span class="form__labelText"> Kwota:</span> 
+                        <input class="form__labelField js-amount" type="number" min="1" step="any" required 
+                            placeholder="Wpisz kwotę w PLN" autofocus>
+                    </label>
+                </p>
+                <p>
+                    <span class="form__labelText"> Waluta:</span>
+                    <select class="form__labelField form__labelField--shorter js-currency">
+                        <option>EUR</option>
+                        <option>CHF</option>
+                        <option>GBP</option>
+                        <option>CZK</option>
+                        <option>NOK</option>
+                    </select>
+                </p>
+                <p>*Kurs liczony z dnia 13.01.2023</p>
+            </fieldset>
+            <p>
+                <button class="form__button">Przelicz</button>
+            </p>
+        </form>
+         <span class="result__name">Twoja kwota wynosi:</span><strong class="js-result form__result"></strong>
+        </div>
+</body>
+
+</html>
