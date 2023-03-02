@@ -1,7 +1,18 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
 
 .container {
 
 max-width: 700px;
 margin: 0 auto;
 padding: 0 20px;
+background-image: url("../image/background.png");
+background-position: center;
 }
